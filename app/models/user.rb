@@ -4,7 +4,7 @@ class User < ApplicationRecord
   has_many :memberships
   has_many :groups, through: :memberships
 
-  validates :email, :personal_data, uniqueness: true
+  validates :email, uniqueness: true
   validates :password, :length => { :minimum => 8 }
   validates :personal_data, :email, :password, presence: true
 
