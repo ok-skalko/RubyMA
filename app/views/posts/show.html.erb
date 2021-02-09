@@ -1,0 +1,5 @@
+<div>
+<h1>Post</h1>
+<h2><%= @post.title %></h2>
+<%= social_share_button_tag(@post.title, :allow_sites => %w(twitter facebook telegram)) %>
+</div>
